@@ -1,5 +1,4 @@
-class Navbar extends React.Component{
-    render(){
+const Navbar = () => {
     return(
         <div>
         <header className="header_area">
@@ -35,6 +34,5 @@ class Navbar extends React.Component{
         </div>
     </header>
     </div>
-       )    
-    }
+    )  
 }
