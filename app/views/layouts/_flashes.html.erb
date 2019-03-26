@@ -1,0 +1,24 @@
+<div class="container">
+<% if notice %>
+	<div class='alert alert-success alert-dismissible  fade show'>
+		<%= notice %>
+	</div>
+<% end %>
+
+<% if alert %>
+	<div class='alert alert-danger alert-dismissible  fade show'>
+		<%= alert %>
+	</div>
+<% end %>
+<% if flash[:success] %>
+	<div class='alert alert-success alert-dismissible  fade show'>
+		<%= flash[:success] %>
+	</div>
+<% end %>
+
+<% if flash[:danger] %>
+	<div class='alert alert-danger alert-dismissible  fade show'>
+		<%= flash[:danger] %>
+	</div>
+<% end %>
+</div>

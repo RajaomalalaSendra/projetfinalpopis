@@ -1,0 +1,38 @@
+<header class="header_area">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <div class="menu_area h-100">
+                        <nav class="navbar h-100 navbar-expand-lg align-items-center">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
+                                <ul class="navbar-nav animated" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="appointments">Team</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="appointments">Contact</a></li>
+                                </ul>
+                                <div class="search-form-area animated">
+                                    <form action="#" method="post">
+                                        <input type="search" name="search" id="search" placeholder="Type keywords &amp; hit enter"></input>
+                                        <button type="submit" class="d-none">search</button>
+                                    </form>
+                                </div>
+                                <div class="login-register-btn">
+                                <% if user_signed_in? %>
+                                  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+                                <% else %>
+                                  <li>
+                                  <%= link_to('Login', new_user_session_path)  %>
+                                  <%= link_to('Registrer', new_user_registration_path)  %>  
+                                  </li>
+                                <% end %>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

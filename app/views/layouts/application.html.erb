@@ -10,6 +10,9 @@
   </head>
 
   <body>
+    <%= render "layouts/navbar"%>
+    <%= render "layouts/flashes"%>
     <%= yield %>
+    <%= react_component 'Footer'%>
   </body>
 </html>
